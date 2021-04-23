@@ -1,0 +1,62 @@
+@font-face{
+    font-family: 'KoPubBatangMedium';
+    src: local('KoPubBatangMedium'),
+        url('KoPubBatangMedium.eot') format('eot'),
+        url('KoPubBatangMedium.woff') format('woff');
+}
+body{
+    margin: 0;
+}
+header{
+    width: auto;
+    font-size: 1em;
+    /* padding: 1em; */
+    height: 70px;
+    font-family: 'KoPubBatangMedium';
+    box-shadow: 0px 4px 3px  rgb(178, 178, 178);
+    z-index: 9999;
+}
+header #seoulMate{
+    position: absolute;
+    top:20px;
+    left:20%;
+    width: 300px;   
+    float: left;
+}
+
+header #button{
+    position: absolute;
+    right:10%;
+    width:90px;
+    top:25px;
+}
+
+#menu li {
+    list-style: none;
+    width:auto;
+    font-family: 'KoPubBatangMedium';
+    display: inline-block;
+}
+nav{
+    background-color: rgb(248, 248, 248);
+    height:50px;
+    width:100%;
+    position: absolute;
+    top: 70px;
+    z-index: -1;
+}
+ul{
+    margin:10px;
+}
+#menu {
+    text-align: center;
+}
+
+#menu a {
+    font-size: 14px;
+    text-decoration: 0;
+    line-height: 30px;
+    color: black;
+    padding: 0 15px;
+    display: block;
+} 
