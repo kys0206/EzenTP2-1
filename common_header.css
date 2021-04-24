@@ -1,20 +1,47 @@
-@font-face{
+/* @font-face{
     font-family: 'KoPubBatangMedium';
     src: local('KoPubBatangMedium'),
         url('KoPubBatangMedium.eot') format('eot'),
         url('KoPubBatangMedium.woff') format('woff');
-}
+} */
+@import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+
 body{
     margin: 0;
 }
+a:-webkit-any-link {
+    color: black ;
+    cursor: pointer;
+    text-decoration: none;
+
+}
 header{
     width: auto;
-    font-size: 1em;
-    /* padding: 1em; */
     height: 70px;
-    font-family: 'KoPubBatangMedium';
     box-shadow: 0px 4px 3px  rgb(178, 178, 178);
     z-index: 9999;
+}
+header .button{
+    font-weight: 300;
+    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.3);
+    /* text-shadow: 0 0 rgba(0,0,0,100) ; */
+    font-size: 12px;
+    font-family: 'KoPubBatang';
+    width:auto;
+    display: inline-block;
+}
+
+header #join{
+    top:25px;
+    position: absolute;
+    right:13.5%;
+    float: right;
+}
+header #login{
+    top:25px;
+    position: absolute;
+    right:10%;
+    float: right;
 }
 header #seoulMate{
     position: absolute;
@@ -24,17 +51,10 @@ header #seoulMate{
     float: left;
 }
 
-header #button{
-    position: absolute;
-    right:10%;
-    width:90px;
-    top:25px;
-}
-
 #menu li {
     list-style: none;
     width:auto;
-    font-family: 'KoPubBatangMedium';
+    font-family: 'KoPubBatang';
     display: inline-block;
 }
 nav{
