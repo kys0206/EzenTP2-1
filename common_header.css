@@ -1,52 +1,66 @@
 /* @font-face{
     font-family: 'KoPubBatangMedium';
     src: local('KoPubBatangMedium'),
-        url('KoPubBatangMedium.eot') format('eot'),
-        url('KoPubBatangMedium.woff') format('woff');
+    url('KoPubBatangMedium.eot') format('eot'),
+    url('KoPubBatangMedium.woff') format('woff');
 } */
 @import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+@import url(http://cdn.jsdelivr.net/npm/font-kopub@1.0/kopubdotum.min.css);
 
 body{
     margin: 0;
 }
-a:-webkit-any-link {
+main{
+    padding-top:120px;
+    border: darkblue 1px solid;
+    /* background-color: rgb(255, 241, 241); */
+    margin:auto;
+    width:70%;
+    position: absolute;
+    left: 15%;
+    height:1000px;
+}
+h1,h2,h3,h4,body{
+    font-family: 'KoPubDotum';
+}
+a:-webkit-any-link { /*링크 밑줄 삭제*/
     color: black ;
     cursor: pointer;
     text-decoration: none;
-
 }
-header{
-    width: auto;
+.home{
+    background:white;
+    position: fixed;
+    width: 100%;
     height: 70px;
-    box-shadow: 0px 4px 3px  rgb(178, 178, 178);
-    z-index: 9999;
+    display: block;
+    box-shadow: 0px 4px 3px  rgb(178, 178, 178); /*그림자*/
+    z-index: 10;
 }
-header .button{
+.home #join, #login{
+    font-family: 'KoPubBatang';
+    font-size: 12px;
     font-weight: 300;
     -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.3);
     /* text-shadow: 0 0 rgba(0,0,0,100) ; */
-    font-size: 12px;
-    font-family: 'KoPubBatang';
-    width:auto;
-    display: inline-block;
+    /* display: inline-block; */
 }
-
-header #join{
+.home #join{
     top:25px;
-    position: absolute;
+    position: fixed;
     right:13.5%;
     float: right;
 }
-header #login{
+.home #login{
     top:25px;
-    position: absolute;
+    position: fixed;
     right:10%;
     float: right;
 }
-header #seoulMate{
-    position: absolute;
+.home #seoulMate{
+    position: fixed;
     top:20px;
-    left:20%;
+    left:15%;
     width: 300px;   
     float: left;
 }
@@ -57,18 +71,17 @@ header #seoulMate{
     font-family: 'KoPubBatang';
     display: inline-block;
 }
-nav{
-    background-color: rgb(248, 248, 248);
-    height:50px;
-    width:100%;
-    position: absolute;
-    top: 70px;
-    z-index: -1;
-}
 ul{
     margin:10px;
 }
 #menu {
+    z-index: 1;
+    background-color: rgb(248, 248, 248);
+    height:50px;
+    width:100%;
+    position: fixed;
+    top: 70px;
+    display: block;
     text-align: center;
 }
 
@@ -79,4 +92,4 @@ ul{
     color: black;
     padding: 0 15px;
     display: block;
-} 
+}

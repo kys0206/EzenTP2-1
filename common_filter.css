@@ -1,0 +1,74 @@
+@import url(http://cdn.jsdelivr.net/npm/font-kopub@1.0/kopubdotum.min.css);
+@import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+/* 
+*{
+    box-sizing: border-box;
+} */
+.filterOutWrap{
+    margin:auto;
+    margin-top: 5%;
+    background-color: rgb(255,248,243);
+    border-radius:15px;
+    width:90%;
+    /* box-sizing: border-box; */
+    display: block;
+    height:700px;
+    /* top:170px; */
+}
+.filterWrap{
+    position:relative;
+    box-sizing: border-box;
+    width:90%;
+    margin:auto;
+    padding: 25px;
+    height: 500px;
+    background: white;
+    border-radius:15px;
+}
+.tit_sch{
+    position: relative;
+    width:90%;
+    margin:auto;
+    padding : 20px 0px;
+    border-bottom: 1px solid #3B3838;
+    margin-bottom: 25px;
+}
+ul{ padding: 0; width:90%}
+.filterWrap li {
+    list-style: none;
+    /* border: #3B3838 1px solid; */
+    padding-bottom: 50px;
+}
+.title{
+    font-family:'KoPubDotum';
+    font-weight: bold;
+    font-size: 14px;
+    width:20%;
+    float: left;
+}
+.tripSite, .tripDays, .tripWith, .tripAccess{
+    float:right;
+    width: 80%
+    /* float: right; */
+}
+.set{
+    font-size: 14px;
+    width:20%;
+    display: inline-block;
+}
+.date{
+    font-size: 14px;
+}
+.title label{ vertical-align: -3px;}
+.tripStyle label{ vertical-align: 2px;}
+.tripDays label{ vertical-align: 2px;}
+
+.tripStyle{
+    float: right;
+    width: 80%
+}
+form #schInfo{ 
+    font-family: 'KoPubDotum';
+}
+
+
