@@ -1,0 +1,99 @@
+@import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+article h2{
+    padding-top:100px;
+    padding-left:40px;
+}
+#content{
+    margin-top: 30px;
+    font-family: 'KoPubBatang';
+    font-size: 12px;
+    font-weight: 300;
+    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.3);
+
+}
+.preview{
+    margin:30px;
+    padding: 0;
+    position: relative;
+    width:230px;
+    height: 230px;
+    display: inline-block;
+}
+
+.thumbnail_img{
+background-color:white;
+width:230px;
+height:230px;
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center center;
+vertical-align: middle;
+}
+.thumbnail_txt{
+    /* margin:20px; */
+    text-align: center; 
+    width:100%;
+    padding-top: 10px;
+    height: 10%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: 'KoPubBatang';
+    font-size: 14px;
+    font-weight: 300;
+    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+	top: 197px;
+	left: 0px;
+}
+
+ul{
+    margin-left: 20px;
+} 
+
+.li_course{
+    list-style-type: none;
+}
+
+.li_course::before {  /*li 높이:20, 경로의 수에 따라 vertical-line 높이 결정 20*4-20/2*/
+    position: relative;
+    left:0%;
+    content: '';   
+    display: inline-block;   
+    height: 10px;  
+    padding: 5px; 
+    width: 10px;    
+    padding-bottom: 10px;
+    background-size: 10px;   
+    background-image: url('./image/bullet2.png');   
+    background-repeat: no-repeat;   
+    background-position: center center;
+    vertical-align: middle;
+}
+.wrap_li{
+    width:215px;
+    position: relative;
+    left:5%; top: 0%;
+    border-left: #3B3838 2px solid;
+    z-index: 5;
+}
+.vertical_line{
+    position: absolute;
+    width:5px;
+    height: 90px;
+    border-left:2px solid #3B3838;
+    left: 9.4px;
+    z-index: -2;
+    } 
+ 
+.ul_course {
+  border: 2px #F2F2F2 solid;
+  position: relative;
+  height: 50%;
+  margin:0px;
+}
+
+small{
+    position: absolute;
+    right:5px;
+    bottom: 5px;
+}

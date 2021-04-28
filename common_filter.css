@@ -9,10 +9,10 @@
     margin-top: 5%;
     background-color: rgb(255,248,243);
     border-radius:15px;
-    width:90%;
+    width: 86%;
     /* box-sizing: border-box; */
     display: block;
-    height:700px;
+    height:460px;
     /* top:170px; */
 }
 .filterWrap{
@@ -20,10 +20,11 @@
     box-sizing: border-box;
     width:90%;
     margin:auto;
-    padding: 25px;
-    height: 500px;
+    padding: 15px;
+    height: 330px;
     background: white;
     border-radius:15px;
+    box-shadow: 2px 2px 2.88px 0.12px rgba(0, 0, 0, 0.15);
 }
 .tit_sch{
     position: relative;
@@ -33,39 +34,61 @@
     border-bottom: 1px solid #3B3838;
     margin-bottom: 25px;
 }
-ul{ padding: 0; width:90%}
+ul{ padding: 0; width:98%}
 .filterWrap li {
     list-style: none;
-    /* border: #3B3838 1px solid; */
-    padding-bottom: 50px;
+    padding-bottom: 35px;
+}
+.filterWrap .line2{
+    list-style: none;
+    padding-bottom: 62px;
 }
 .title{
     font-family:'KoPubDotum';
     font-weight: bold;
     font-size: 14px;
-    width:20%;
+    width:17%;
     float: left;
 }
-.tripSite, .tripDays, .tripWith, .tripAccess{
+.tripSite, .tripWith, .tripAccess{
     float:right;
-    width: 80%
+    width: 83%
     /* float: right; */
+}
+.tripDays{
+    float:right;
+    width:83%;
 }
 .set{
     font-size: 14px;
     width:20%;
     display: inline-block;
+    padding-bottom: 10px;
 }
+.setDate{
+    font-size: 14px;
+    width: 36%;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+#set1stDate{
+    padding-right:26px;
+
+}
+
 .date{
+    width:200px;
     font-size: 14px;
 }
 .title label{ vertical-align: -3px;}
 .tripStyle label{ vertical-align: 2px;}
 .tripDays label{ vertical-align: 2px;}
+.tripWith label{ vertical-align: 2px;}
+.tripAccess label{ vertical-align: 2px;}
 
 .tripStyle{
     float: right;
-    width: 80%
+    width: 83%
 }
 form #schInfo{ 
     font-family: 'KoPubDotum';

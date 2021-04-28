@@ -9,6 +9,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='common_filter.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='common_buttonChkbox.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main_content.css'>
     <script src='main.js'></script>
     <style>
         
@@ -17,7 +18,7 @@
 <body>
     <header>
         <div class = "home">
-        <img id="seoulMate" src="./image/SeoulMate2.png">
+        <a href='main.html'><img id="seoulMate" src="./image/SeoulMate2.png"></a>
         <span class="button">
             <a id ="join" href="#" >회원가입</a>
             <a id = "login" href="#" >로그인</a>
@@ -43,10 +44,10 @@
                     <div class="tripSite">
                     <input type="text" id="destination" placeholder="여행지 선택" readonly="">
                     <!--onclick은 자바스크립트-->
-                    <button type="button" id="dstBtn" class="btn focus btn_sch" onclick="SitePopup.layerShow('area','areaBtn');"><span class="web_only">출발지 </span>선택</button></div>
+                    <button type="button" id="dstBtn" class="btn focus btn_sch" onclick="SitePopup.layerShow('area','areaBtn');"><span class="web_only">여행지 </span>선택</button></div>
                 </li>
                     <!--지역선택은은 하나의 input태그와 연결되므로 label-input으로 묶음-->
-                <li><span class="title"><label> 여행목적 </label></span>
+                <li class="line2"><span class="title"><label> 여행목적 </label></span>
                         <div class="tripStyle"> <!--div: 모든 체크박스 묶음 | span : 하나의 체크박스와 목록명 묶음 | input : 체크박스 label:목록명-->
                             <span class="set"><input type="checkbox" name="tripStyle" id="chk01" value="1"><label for="chk01"> 자연/경치 </label></span>
                             <span class="set"><input type="checkbox" name="tripStyle" id="chk02" value="2"><label for="chk02"> 휴식/힐링 </label></span>
@@ -59,15 +60,15 @@
                         <span class="set"><input type="checkbox" name="tripStyle" id="chk08" value="8"><label for="chk08"> 역사/문화 </label></span>
                     </div>
                 </li>
-                <li><span class="title"><label for="tripDays"> 여행기간 </label></span>
+                <li class= "line2"><span class="title"><label for="tripDays"> 여행기간 </label></span>
                     <div class="tripDays"> 
                         <span class="set"><input type="checkbox" name="tripDays" id="chk09" value="9"><label for="chk09"> 당일치기 </label></span>
                         <span class="set"><input type="checkbox" name="tripDays" id="chk10" value="10"><label for="chk10"> 1박2일 </label></span>
                         <span class="set"><input type="checkbox" name="tripDays" id="chk11" value="11"><label for="chk11"> 2박3일 </label></span>
                         <span class="set"><input type="checkbox" name="tripDays" id="chk12" value="12"><label for="chk12"> 3박4일 </label></span>
                         <br>
-                        <span class="set"><input type="checkbox" name="tripDays" id="chk13" value="13"><label for="chk13"> 직접선택 </label></span>
-                        <input type="date">
+                        <span id="choosePrd"> <span class="set"><input type="checkbox" name="tripDays" id="chk13" value="13"><label for="chk13"> 직접선택 </label></span>
+                        <span class="setDate" id="set1stDate"><label class="date">시작일 <input class="dateInput" type="date" name="startDate" value="시작일"></label></span> <span class="setDate"><label class="date">종료일 <input class="dateInput" type="date" name="finalDate" value="종료일"></label></span></span>
                         <!-- <input type="text" id="tourExptYmd" class="useDatepicker hasDatepicker" title="예정일자 (입력예시 : 20210101)"> -->
                         <!-- <button type="button" id="dstBtn" class="btn focus btn_sch" onclick="SitePopup.layerShow('area','areaBtn');"><span class="web_only"> </span></button> -->
                     </div>
@@ -91,16 +92,59 @@
                     </div>
                 </li>
                 
-                <li><span class="title"><label for="tripKeyword"> 키워드검색 </label></span>
-                    <div class="tripSite">
+                <li><span class="title"><label for="tripKeyword"> 추가 키워드 </label></span>
+                    <div class="tripKeyword">
                         <input type="text" id="tripKeyword" placeholder="기타 키워드 입력(선택사항)">
-                        <input type="submit" value="검색"></div>
+                        <input type="submit" value="검색">
+                        <input type="reset" value="입력 초기화"></div>
                 </li>
             </ul>
         </div>
     </form>
     </div>
-    </main>
+    <section id="content">
+        <article>
+            <h2> 한적한 길따라 산책 어떠세요? </h2>
+            <div class = "preview">
+                <span class = "thumbnail_txt"> 걷기좋은 서울의 골목</span>
+                <div class = "thumbnail_img" style="background-image:url('image/seochon.jpg')"></div>
+                <ul class="ul_course">
+                    <span class="vertical_line"></span>
+                    <li class="li_course"> 경복궁역 2번출구 </li>
+                    <li class="li_course"> 이상의집 </li>
+                    <li class="li_course"> 대오서점 </li>
+                    <li class="li_course"> 박노수가옥 </li> <small>총 거리:2.4km</small>
+                </ul>
+            </div>
+            <div class = "preview">
+                <span class = "thumbnail_txt"> 도심 속의 광장, 광화문 </span>
+                <div class = "thumbnail_img" style="background-image:url('image/gwanhwamun.jpg')"></div>
+                <ul class="ul_course">
+                    <span class="vertical_line"></span>
+                    <li class="li_course"> 경복궁역 2번출구<br> </li>
+                    <li class="li_course"> 이상의집<br> </li>
+                    <li class="li_course"> 대오서점<br> </li>
+                    <li class="li_course"> 박노수가옥<br> </li> <small>총 거리:2.4km</small>
+                </ul>
+            </div>
+            <div class = "preview">
+                <span class = "thumbnail_txt"> 현재와 과거의 공존, 북촌 한옥마을 </span>
+                <div class = "thumbnail_img" style="background-image:url('image/timothy-ries-Wko1Ld0-z9U-unsplash.jpg')"></div>
+                <ul class="ul_course">
+                    <span class="vertical_line"></span>
+                    <li class="li_course"> 경복궁역 2번출구<br> </li>
+                    <li class="li_course"> 이상의집<br> </li>
+                    <li class="li_course"> 대오서점<br> </li>
+                    <li class="li_course"> 박노수가옥<br> </li> <small>총 거리:2.4km</small>
+                </ul>
+            </div>
+        </article>
+    </section>
+</main>
+<footer>
+    <p>&copy; 서울여행길잡이 SeoulMate <br>
+    이메일 : team1_ezen21@google.com</p>
+</footer>
 
 </body>
 </html>
