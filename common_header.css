@@ -7,18 +7,21 @@
 @import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
 @import url(http://cdn.jsdelivr.net/npm/font-kopub@1.0/kopubdotum.min.css);
 
+header{
+    height: 120px;
+}
 body{
     margin: 0;
 }
 main{
-    padding-top:120px;
-    border:  #3B3838 1px solid;
+    padding-top:20px;
+    padding-bottom: 100px;
+    border: #3B3838 1px solid;
     /* background-color: rgb(255, 241, 241); */
     margin:auto;
     width:70%;
-    position: absolute;
-    left: 15%;
-    height:1000px;
+    position: relative;
+    height:auto;
 }
 h1,h2,h3,h4,body{
     font-family: 'KoPubDotum';
@@ -92,4 +95,26 @@ ul{
     color: black;
     padding: 0 15px;
     display: block;
+}
+
+footer{
+    position: relative;
+    background: rgb(248, 248, 248);
+    padding-left: 100px;
+    font-family: 'KoPubBatang';
+    font-size: 12px;
+    font-weight: 300;
+    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.3);
+    margin-top:50px;
+    height: 100px;
+    width: 100%;
+    display: block;
+}
+
+footer p{
+    display: inline-block;
+    background-color:ivory;
+    margin: 30px;
+    vertical-align: middle;
+    
 }
