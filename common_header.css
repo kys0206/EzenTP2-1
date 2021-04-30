@@ -74,7 +74,7 @@ a:-webkit-any-link { /*링크 밑줄 삭제*/
     font-family: 'KoPubBatang';
     display: inline-block;
 }
-ul{
+#menu ul{
     margin:10px;
 }
 #menu {

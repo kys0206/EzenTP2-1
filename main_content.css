@@ -1,7 +1,10 @@
 @import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+@import url(http://cdn.jsdelivr.net/npm/font-kopub@1.0/kopubdotum.min.css);
 article h2{
-    padding-top:100px;
-    padding-left:40px;
+    margin-top:80px;
+    margin-left:30px;
+    padding-left : 7px;
+    border-left: #3B3838 4px solid;
 }
 #content{
     margin-top: 30px;
@@ -9,19 +12,32 @@ article h2{
     font-size: 12px;
     font-weight: 300;
     -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.3);
-
+    padding-bottom: 50px;
 }
+/* ul{
+    margin-left: 20px;
+}  */
+#article{ margin-bottom: 50px;}
+hr{
+    width: 790px;  background-color:#3B3838; margin:auto; margin-top: 90px; 
+}
+/* hr{
+    width: 150px; background-color:#3B3838; border: #3B3838 3px solid; margin:auto; margin-top: 100px;
+} */
 .preview{
-    margin:30px;
+    margin:20px;
     padding: 0;
     position: relative;
+    left:30px;
     width:230px;
     height: 230px;
     display: inline-block;
+    margin-bottom: 20px;
 }
 
 .thumbnail_img{
 background-color:white;
+border-radius: 5%;
 width:230px;
 height:230px;
 background-size:cover;
@@ -45,10 +61,10 @@ vertical-align: middle;
 	top: 197px;
 	left: 0px;
 }
-
-ul{
-    margin-left: 20px;
-} 
+.hover_place{ width:230px; height:230px; display:block; margin:0px; font-size: 0; position: relative;}
+.hover_place:hover{ border-radius :5%; font-size: 12px; display:block; background-color:rgba(0, 0, 0, 0.4); color: white;}
+.hover_place_ul{width:180px; position: absolute; padding-top:20px; font-family:'KoPubDotum'; font-weight: 300; padding-left:20px; margin:0px;}
+.hover_place_li{padding-bottom: 10px; width:100px; height:12px; display: block; -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.3);}
 
 .li_course{
     list-style-type: none;
@@ -86,10 +102,12 @@ ul{
     } 
  
 .ul_course {
+  border-radius: 5%;
   border: 2px #F2F2F2 solid;
   position: relative;
   height: 50%;
   margin:0px;
+  padding:0;
 }
 
 small{
