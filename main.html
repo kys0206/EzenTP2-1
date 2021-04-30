@@ -11,9 +11,6 @@
     <link rel='stylesheet' type='text/css' media='screen' href='common_buttonChkbox.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='main_content.css'>
     <script src='main.js'></script>
-    <style>
-        
-    </style>
 </head>
 <body>
     <header>
@@ -25,12 +22,12 @@
         </span>
         </div>
         <nav id="menu">
-            <ul>
-                <li><a href="#"> 01 추천여행코스 </a></li>
-                <li><a href="#"> 02 인기여행지 </a></li>
-                <li><a href="#"> 03 자유게시판 </a></li>
-                <li><a href="#"> 04 공지사항 </a></li>
-                <li><a href="#"> 05 마이페이지 </a></li>
+            <ul id="menu_ul">
+                <li class="menu_li"><a href="#"> 01 추천여행코스 </a></li>
+                <li class="menu_li"><a href="#"> 02 인기여행지 </a></li>
+                <li class="menu_li"><a href="#"> 03 자유게시판 </a></li>
+                <li class="menu_li"><a href="#"> 04 공지사항 </a></li>
+                <li class="menu_li"><a href="#"> 05 마이페이지 </a></li>
             </ul>
         </nav>
     </header>
@@ -39,7 +36,7 @@
     <form name="schInfo" id="schInfo" style="display: block;" method="POST">
         <h2 class="tit_sch"> <b>맞춤형</b> 여행정보 찾기</h2>
         <div class ="filterWrap">
-            <ul>
+            <ul class="filter_ul">
                 <li><span class="title"><label for="destination"> 지역 </label></span>
                     <div class="tripSite">
                     <input type="text" id="destination" placeholder="여행지 선택" readonly="">
@@ -103,32 +100,32 @@
     </form>
     </div>
     <section id="content">
-        <article>
-            <h2> 한적한 길따라 산책 어떠세요? </h2>
+        <article id="section1_course">
+            <h2> 도심 속 여유를 찾아, 산책하기 좋은 서울의 공간 </h2>
             <div class = "preview">
-                <span class = "thumbnail_txt"> 걷기좋은 서울의 골목</span>
-                <div class = "thumbnail_img" style="background-image:url('image/seochon.jpg')"></div>
+                <span class = "thumbnail_txt"> 600년의 역사가 숨쉬는 삼청동 </span>
+                <div class = "thumbnail_img" style="background-image:url('image/samcheong.jpg')"></div>
                 <ul class="ul_course">
                     <span class="vertical_line"></span>
-                    <li class="li_course"> 경복궁역 2번출구 </li>
-                    <li class="li_course"> 이상의집 </li>
-                    <li class="li_course"> 대오서점 </li>
-                    <li class="li_course"> 박노수가옥 </li> <small>총 거리:2.4km</small>
+                    <li class="li_course"> 안국역 1번 출구 </li>
+                    <li class="li_course"> 삼청공원 숲속도서관 </li>
+                    <li class="li_course"> 풍년쌀농산 </li>
+                    <li class="li_course"> 북촌 한옥마을 </li> <small>총 거리:2.4km</small>
+                </ul>
+        </div>
+            <div class = "preview">
+                <span class = "thumbnail_txt"> 고즈넉함 따라 걷는 부암동 문화산책 </span>
+                <div class = "thumbnail_img" style="background-image:url('https://d2uh4olaxaj5eq.cloudfront.net/fit-in/0x1018/b4d64f7a-3ed7-4160-a162-8b2839b76d68.jpg')"></div>
+                <ul class="ul_course">
+                    <span class="vertical_line"></span>
+                    <li class="li_course"> 윤동주 시인의 언덕 <br> </li>
+                    <li class="li_course"> 청운공원 <br> </li>
+                    <li class="li_course"> 창의문 <br> </li>
+                    <li class="li_course"> 계열사 <br> </li> <small>총 거리:2.4km</small>
                 </ul>
             </div>
             <div class = "preview">
-                <span class = "thumbnail_txt"> 도심 속의 광장, 광화문 </span>
-                <div class = "thumbnail_img" style="background-image:url('image/gwanhwamun.jpg')"></div>
-                <ul class="ul_course">
-                    <span class="vertical_line"></span>
-                    <li class="li_course"> 경복궁역 2번출구<br> </li>
-                    <li class="li_course"> 이상의집<br> </li>
-                    <li class="li_course"> 대오서점<br> </li>
-                    <li class="li_course"> 박노수가옥<br> </li> <small>총 거리:2.4km</small>
-                </ul>
-            </div>
-            <div class = "preview">
-                <span class = "thumbnail_txt"> 현재와 과거의 공존, 북촌 한옥마을 </span>
+                <span class = "thumbnail_txt"> 걷기좋은 서울의 골목, 서촌으로 </span>
                 <div class = "thumbnail_img" style="background-image:url('image/timothy-ries-Wko1Ld0-z9U-unsplash.jpg')"></div>
                 <ul class="ul_course">
                     <span class="vertical_line"></span>
@@ -137,6 +134,41 @@
                     <li class="li_course"> 대오서점<br> </li>
                     <li class="li_course"> 박노수가옥<br> </li> <small>총 거리:2.4km</small>
                 </ul>
+            </div>
+        </article>
+        <hr>
+        <article id="section2_place">
+            <h2> 이달의 인기 여행지 </h2>
+            <div class = "preview">
+                <span class = "thumbnail_txt"> 쿠나 </span>
+                <div class = "thumbnail_img" style="background-image:url('http://olivem.co.kr/wp-content/uploads/2020/08/O_200615D_2189.jpg')">
+                    <a class="hover_place" href="main.html"><ul class="hover_place_ul"><li class="hover_place_li">성동구 성수동</li><li class="hover_place_li">음식점</li></ul></a></div>
+            </div>
+            <div class = "preview">
+                <span class = "thumbnail_txt"> 창덕궁 </span>
+                <div class = "thumbnail_img" style="background-image:url('image/changdeokPalace.jpg')">
+                    <a class="hover_place" href="main.html"><ul class="hover_place_ul"><li class="hover_place_li">종로구</li><li class="hover_place_li">고궁</li></ul></a></div>
+                
+            </div>
+            <div class = "preview">
+                <span class = "thumbnail_txt"> 선유도공원 </span>
+                <div class = "thumbnail_img" style="background-image:url('https://i.ytimg.com/vi/0Wg5q4c7-l8/maxresdefault.jpg')">
+                    <a class="hover_place" href="main.html"><ul class="hover_place_ul"><li class="hover_place_li">마포구</li><li class="hover_place_li">한강공원</li></ul></a></div>
+            </div>
+            <div class = "preview">
+                <span class = "thumbnail_txt">청운문학도서관</span>
+                <div class = "thumbnail_img" style="background-image:url('https://www.lottehotelmagazine.com/resources/a4206b34-44a2-45a9-9d55-57232ce1834d_img_art_chungwoon_detail12.jpg')">
+                    <a class="hover_place" href="main.html"><ul class="hover_place_ul"><li class="hover_place_li">종로구</li><li class="hover_place_li">도서관</li></ul></a></div>
+            </div>
+            <div class = "preview">
+                <span class = "thumbnail_txt"> 아크앤북 </span>
+                <div class = "thumbnail_img" style="background-image:url('https://www.jungle.co.kr/image/5abe3cd54e29b29f15f64a3b')">
+                    <a class="hover_place" href="main.html"><ul class="hover_place_ul"><li class="hover_place_li">중구 을지로</li><li class="hover_place_li">서점</li></ul></a></div>
+            </div>
+            <div class = "preview">
+                <span class = "thumbnail_txt"> 낙산공원 </span>
+                <div class = "thumbnail_img" style="background-image:url('https://blog.kakaocdn.net/dn/ZRSes/btqKxk8eSMc/TyTyfGtkfyjHwYpkdBmAQk/img.jpg')">
+                    <a class="hover_place" href="main.html"><ul class="hover_place_ul"><li class="hover_place_li">성북구</li><li class="hover_place_li">공원</li></ul></a></div>
             </div>
         </article>
     </section>
