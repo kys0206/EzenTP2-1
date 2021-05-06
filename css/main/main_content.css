@@ -62,9 +62,7 @@ vertical-align: middle;
 .hover_place_ul{width:180px; position: absolute; padding-top:20px; font-family:'KoPubDotum'; font-weight: 300; padding-left:20px; margin:0px;}
 .hover_place_li{padding-bottom: 10px; width:100px; height:12px; display: block; -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.3);}
 
-.li_course{
-    list-style-type: none;
-}
+.li_course{list-style-type: none;}
 
 .li_course::before {  /*li 높이:20, 경로의 수에 따라 vertical-line 높이 결정 20*4-20/2*/
     position: relative;
@@ -76,7 +74,7 @@ vertical-align: middle;
     width: 10px;    
     padding-bottom: 10px;
     background-size: 10px;   
-    background-image: url('./image/bullet2.png');   
+    background-image: url('../../image/bullet2.png');   
     background-repeat: no-repeat;   
     background-position: center center;
     vertical-align: middle;

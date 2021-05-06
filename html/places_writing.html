@@ -5,18 +5,15 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title> 인기여행지 </title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='common_header.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='common_filter.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='common_buttonChkbox.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main_content.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='place_writing.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/place.css'>
     <script src='main.js'></script>
 </head>
 <body>
     <header>
         <div class = "home">
-            <a class="seoulMate" href='main.html'><img class="seoulMate" src="./image/SeoulMate2.png"></a>
+            <a class="seoulMate" href='main.html'><img class="seoulMate" src="../image/SeoulMate2.png"></a>
         </div>
         <span class="top_button">
             <a id = "join" href="#" >회원가입</a>
@@ -25,7 +22,7 @@
         <nav id="menu">
             <ul id="menu_ul">
                 <li class="menu_li"><a href="#"> 01 추천여행코스 </a></li>
-                <li class="menu_li"><a href="#"> 02 인기여행지 </a></li>
+                <li class="menu_li"><a href="places_main.html"> 02 인기여행지 </a></li>
                 <li class="menu_li"><a href="#"> 03 자유게시판 </a></li>
                 <li class="menu_li"><a href="#"> 04 공지사항 </a></li>
                 <li class="menu_li"><a href="#"> 05 마이페이지 </a></li>
@@ -70,7 +67,7 @@
         <h3>어떤 여행지인지, 어떤 사람에게 추천하는지 <b>체크</b>해보세요. </h3>
         <!-- <span class="chkInfo" style="cursor: hand;" onclick="if(unfoldBtn.style.display=="none"> -->
         <div class="chkbox">
-        <input type="checkbox" class="unfoldBtn" id="unfoldBtn"><label for="unfoldBtn" class="labelBtn" onclick=""><img src="image/unfold.png" alt=""></label>
+        <input type="checkbox" class="unfoldBtn" id="unfoldBtn"><label for="unfoldBtn" class="labelBtn" onclick=""><img src="../image/unfold.png" alt=""></label>
         <!-- <input type="button" id="btn unfoldBtn"><img src="image/unfold.png" alt=""></button> -->
         <!-- <button type="button" id="btn unfoldBtn"><img src="image/unfold.png" alt=""></button> -->
         <ul class="chkbox_ul">
@@ -131,5 +128,9 @@
     </form>
     </article>
     </main>
+    <footer>
+        <p>&copy; 서울여행길잡이 SeoulMate <br>
+        이메일 : team1_ezen21@google.com</p>
+    </footer>
 </body>
 </html>

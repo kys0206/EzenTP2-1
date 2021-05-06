@@ -1,16 +1,20 @@
 button{
     font-family: 'KoPubDotum';
-    background: #3B3838;
+    background: rgb(148,127,116);
+    /* background-color:  rgb(255,248,243); */
     color:white;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 300;
     width:95px;
-    border: 1px #3B3838 solid;
     height: 25px;
+    border: 0 none;
+    box-shadow: 1px 1px 0px 0.5px rgba(0, 0, 0, 0.25);
 }
+
 input[type="text" i]{
     font-family: 'KoPubDotum';
     width:300px;
-    font-size: 14px;
+    font-size: 12px;
     padding-left:5px;
     border:1.5px rgb(178, 178, 178) solid;
     height: 20px;
@@ -18,7 +22,7 @@ input[type="text" i]{
 input[type="date" i]{
     font-family: 'KoPubDotum';
     width:130px;
-    font-size: 14px;
+    font-size: 12px;
     padding-left:5px;
     border:1.5px rgb(178, 178, 178) solid;
     height: 20px;
@@ -26,34 +30,36 @@ input[type="date" i]{
 input[type="submit" i], input[type="reset" i]{
     width:95px;
     font-family: 'KoPubDotum';
-    font-size: 14px;
+    font-size: 12px;
     background: #3B3838;
+    background: rgb(148,127,116);
+    transform: rotate(-0.03deg);
     color:white;
-    border: 1px #3B3838 solid;
+    border: none;
     height: 25px;
+    box-shadow: 1px 1px 0px 0.5px rgba(0, 0, 0, 0.25);
+}
+input[type="reset" i]{
+    background-color:  rgb(255,248,243);
+    color: #3B3838;
+    border: 0 none;
 }
 
 input[type="checkbox" i]{
     border:1.5px rgb(178, 178, 178) solid;
-    
 }
 
 .hiddenBtn{
     display:none;
 }
-
 .btn{
     transform: rotate(-0.03deg);
     font-size: 12px;
 }
-.submitBtn{
-    background: #3B3838;
-    color: white;
-}
 .write .submitBtn{
     cursor: pointer;
     display: block;
-    margin: auto;
+    margin-left:695px;
     margin-top: 20px;
     width: 100px;
 }
@@ -79,6 +85,8 @@ input[type="checkbox" i]{
     box-sizing: border-box;
     align-items: flex-end;
     font-size: 12px;
+}
+.write .addSchBtn, .write .resetBtn{
     position: relative;
     right: -218px;
 }

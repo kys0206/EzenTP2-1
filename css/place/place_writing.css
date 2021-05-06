@@ -109,7 +109,7 @@ li #placeTime{ width:175px;}
     border:none;
 }
 
-li #destination, #tripKeyword{
+.chkbox_ul li #destination, .chkbox_ul #tripKeyword{
     width:350px;
     font-size: 12px;
     transform: rotate(-0.03deg);
@@ -133,15 +133,6 @@ li #destination, #tripKeyword{
     width:400px;
     float:left;
 }
-
-.unfoldBtn ~label{
-    background-color: white; border: 0 none; height: 15px; width:26px; display: block;
-    position: relative; left:50%; top:-10px; margin-left: -13px; padding: 0; margin-top: 0;
-    cursor: pointer; }
-
-.unfoldBtn { position:relative; left:-9999px; width: 0; height: 0;}
-.unfoldBtn ~ label img{ height: 12px;}
-/* .unfoldBtn[onclick]{ transform: rotate(180);} */
 .chkBox > label{
     cursor:pointer;
 }
@@ -149,9 +140,6 @@ li #destination, #tripKeyword{
 .chkbox_ul .tripKeyword > #tripKeyword { width:277px;}
 .unfoldBtn:checked ~ .chkbox_ul{
     width:500px; padding-top:20px; display: inline-block;
-}
-.unfoldBtn:checked + label{
-    transform: rotate(180deg) translateX(8px);
 }
 .chkbox_ul .resetBtn{
     position: relative;

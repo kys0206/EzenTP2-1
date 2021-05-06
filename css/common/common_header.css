@@ -45,13 +45,14 @@ a:-webkit-any-link { /*링크 밑줄 삭제*/
     z-index:15;
 }
 .top_button #join, #login{
+    transform: rotate(-0.03deg);
     font-family: 'KoPubBatang';
     font-size: 12px;
     font-weight: 300;
     display: inline-block;
     cursor:pointer;
     width:45px;
-    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.3);
+    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.2);
     /* text-shadow: 0 0 rgba(0,0,0,100) ; */
 }
 
