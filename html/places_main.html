@@ -5,17 +5,15 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title> HOME </title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='common_header.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='common_filter.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='common_buttonChkbox.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main_content.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/place.css'>
     <script src='main.js'></script>
 </head>
 <body>
     <header>
         <div class = "home">
-            <a class="seoulMate" href='main.html'><img class="seoulMate" src="./image/SeoulMate2.png"></a>
+            <a class="seoulMate" href='main.html'><img class="seoulMate" src="../image/SeoulMate2.png"></a>
         </div>
         <span class="top_button">
             <a id = "join" href="#" >회원가입</a>
@@ -24,7 +22,7 @@
         <nav id="menu">
             <ul id="menu_ul">
                 <li class="menu_li"><a href="#"> 01 추천여행코스 </a></li>
-                <li class="menu_li"><a href="#"> 02 인기여행지 </a></li>
+                <li class="menu_li"><a href="places_main.html"> 02 인기여행지 </a></li>
                 <li class="menu_li"><a href="#"> 03 자유게시판 </a></li>
                 <li class="menu_li"><a href="#"> 04 공지사항 </a></li>
                 <li class="menu_li"><a href="#"> 05 마이페이지 </a></li>
@@ -45,7 +43,7 @@
             </div>
             <div class = "preview">
                 <span class = "thumbnail_txt"> 창덕궁 </span>
-                <div class = "thumbnail_img" style="background-image:url('image/changdeokPalace.jpg')">
+                <div class = "thumbnail_img" style="background-image:url('../image/changdeokPalace.jpg')">
                     <a class="hover_place" href="main.html"><ul class="hover_place_ul"><li class="hover_place_li">종로구</li><li class="hover_place_li">고궁</li></ul></a></div>
                 
             </div>
@@ -71,6 +69,9 @@
             </div>
         </article>
     </section>
+        <ul class="side-bar long">
+        <li><a href="places_writing.html"> 인기 여행지 소개하기</a></li>
+        </ul>
     </main>
     <footer>
         <p>&copy; 서울여행길잡이 SeoulMate <br>
